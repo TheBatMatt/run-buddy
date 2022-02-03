@@ -205,6 +205,10 @@ footer a {
   text-align: right;
 }
 
+.trainers h2 {
+  text-align: center;
+}
+
 .trainer-bio h3 {
   font-size: 32px;
   margin-bottom: 8px;
