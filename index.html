@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8" />
+ <head>
     <title>Run Buddy</title>
-
-    <head>
-
-        <link rel="stylesheet" href="assets\CSS\style.css">
-
-    </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets\CSS\navbar.css">
+	<link rel="stylesheet" href="assets\CSS\style.css">
+	 </head>
 
     <body>
-
-        <!-- navigation -->
-        <header>
-            <h1>
-                <a href="/">RUN BUDDY</a>
-            </h1>
-
-        <nav>
-        <ul>
-            <!-- Anchor element -->
-            <li>
-                <a href="html#what-we-do">What We do</a>
-            </li>
-            <li>
-                <a href="html#what-you-do">What You do</a>
-            </li>
-            <li>
-                <a href="html#your-trainers">Your Trainers</a>
-            </li>
-            <li>
-                <a href="html#reach-out">Reach Out</a>
-            </li>
-        </ul>
-        </nav>
-        </header>
-        
+    	<script src="./assets/js/navbar.js"></script>	
+    	
+    		<div id="nav-background">
+    		<div id="nav-container">
+    		<header id="nav-header">
+    		<h2><a href="#" id="nav-logo">RUN BUDDY</a></h2>
+    		<div id="nav-menu-button">MENU</div>
+    		</header>
+    		<nav>
+    		<ul class="nav-ul hide-ul">
+ 
+    		<!-- Anchor element -->
+    		<li>
+    		<a class="nav-link" href="html#what-we-do">What We do</a>
+    		</li>
+    		<li>
+    		<a class="nav-link" href="html#what-you-do">What You do</a>
+    		</li>
+    		<li>
+    		<a class="nav-link" href="html#your-trainers">Your Trainers</a>
+    		</li>
+    		<li>
+    		<a class="nav-link"  href="html#reach-out">Reach Out</a>
+    		</li>
+    		</ul>
+ 	
+    	</nav>
+    	</div>
+  	</div>
+     
         <!-- hero/jumbotron -->
         <section class="hero">
 
             <div class="hero-form">
                 <h3>Get Started Today!</h3>
-                <p>Fill out this form and one of our trainers will schedule a consult</p>
+                <p id="form-desc" >Fill out this form and one of our trainers will schedule a consult</p>
                 
                 <form>
                     <label for="name">Enter full name:</label>
@@ -50,14 +53,14 @@
                     <input class="form-input" type="email" placeholder="Email" name="email" id="email" />
                     <label for="phone">Enter Phone Number</label>
                     <input class="form-input" type="tel" placeholder="Phone Number" name="phone" id="phone" />
-                    <p>
-                        Have you worked with a trainer before?
+                    <p id="form-ques" >
+                        Have you worked with a trainer before?<br>
                         <input type="radio" name="trainer-confirm" id="trainer-yes" />
                         <label for="trainer-yes">Yes</label>
                         <input type="radio" name="trainer-confirm" id="trainer-no" />
                         <label for="trainer-no">No</label>    
                     </p>    
-                    <p>  
+                    <p id="check_b" >  
                         <label for="checkbox">I Acknownledge that I am at least 18 years of age</label>  
                         <input type="checkbox" name="age-confirm" id="checkbox">
                     </p>
@@ -69,6 +72,7 @@
 
         </section>
             
+           
 
         <!-- "what we do" section -->
         <section id="what-we-do" class="intro">
@@ -188,7 +192,7 @@
                 &copy ; 2019 Run Buddy, Inc.
             </div>
          </footer>
-
+         
     </body>
 
 </html>
